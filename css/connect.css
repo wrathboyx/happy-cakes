@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-self: center;
+    font-family: 'Alegreya', serif;
+}
+
+.logo {
+    padding-bottom: 4px;
+    margin-left: 10px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.navigation{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 5px;
+}
+
+.header {
+    line-height: 80px;
+    display: inline-block;
+    color: rgb(52,50,64);
+}
+
+.navbar {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    line-height: 65px;
+    position: relative;
+    margin:0 10px ;        
+}
+
+.navbar li ul.drop-down li {
+    display: block;
+    line-height: 60px;
+}
+
+.navigation ul li ul.drop-down {
+    width: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navigation ul li:hover ul.drop-down {
+    display: block;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: rgb(52,50,64);
+    padding: 0px 10px;
+}
+
+.navbar a:after{
+    content: "";
+    position: absolute;
+    background-color: #9e3c6d;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 18px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #c24985;
+    transform: scale(1.1);
+}
+
+.navbar a:hover:after{
+    width: 100%;
+    color: #9e3c6d;
+}
+
+/* PHP */
+/* Concact US CSS */
+.section-contact {
+    min-height: 45vh;
+    background-image: linear-gradient(180deg, white 50%, #551937 50%);
+    
+    text-align: center;
+}
+
+.container-form {  
+
+    @media (min-width: 768px) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+
+.content h1 {
+    font-size: 18px;
+}
+
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.footer ul {
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: rgb(52,50,64);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li:hover{
+    opacity: 1;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}

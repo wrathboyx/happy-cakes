@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale-1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/iconcake.png">
+    <title>Happy Cakes</title>
+</head>
+<body>
+    <!-- CSS NAVBAR -->
+    <nav class="navigation">
+        <img src="../img/logo2.jpeg" class="logo" align="center">
+        <li class="header"><a href="index.html"><h2>Happy Cakes</h2></a></li>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul class="drop-down">
+                    <li><a href="pudding.html">Pudding</a></li>
+                    <li><a href="cupcake.html">Cup Cake</a></li>
+                    <li><a href="croissant.html">Croissant</a></li>
+                    <li><a href="donut.html">Donut</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- CSS Slide GRID CONTAINER -->
+    <!-- <div class="slider-grid"></div> -->
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+            
+                <div class="st first"><img src="../img/banner.jpg" alt=""></div>
+                <div class="st"><img src="../img/banner2.jpg" alt=""></div>
+                <div class="st"><img src="../img/banner3.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        },5000);
+    </script>
+    <!-- MAIN CONTENT-->
+    <div class="menu">
+        <main class="main-grid">
+            <article>
+                <a href="pudding.html">
+                <img src="../img/dessert.jpg" width="250px" height="250px">
+                <div class="content">
+                    <h2>Pudding</h2>
+                    <p>Merupakan Hidangan Manis Yang Menyegarkan</p>
+                </div>
+                </a>  
+            </article>
+            <article>
+                <a href="cupcake.html">
+                <img src="../img/cake.jpg" width="250px" height="250px">
+                <div class="content">
+                    <h2>Cup Cake</h2>
+                    <p>Merupakan Kue Mini Yang Manis dan Hangat</p>
+                </div>
+                </a>
+            </article>
+            <article>
+                <a href="croissant.html">
+                <img src="../img/croissant.jpg" width="250px" height="250px">
+                <div class="content">
+                    <h2>Croissant</h2>
+                    <p>Merupakan Makanan Yang Bertekstur Renyah</p>
+                </div>
+                </a>
+            </article>
+            <article>
+                <a href="donut.html">
+                <img src="../img/donut.jpg" width="250px" height="250px">
+                <div class="content">
+                    <h2>Donut</h2>
+                    <p>Merupakan Makanan Yang Bertekstur Lembut dan Manis</p>
+                </div>
+                </a>
+            </article>
+        </main>
+    </div>
+    <!-- Footer -->
+    <section class="footer">
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <p class="copyright">
+            Copyright @2022, All Right Reserved
+        </p>
+    </section>
+</body>
+</html>
